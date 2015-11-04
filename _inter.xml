@@ -1,0 +1,10 @@
+<dvdauthor dest="/home/autor/Desktop/1640/export_dvd">
+	<vmgm>
+		<fpc>
+			jump vmgm menu;
+		</fpc>
+		<menus>
+			<video format="pal" aspect="16:9"> </video>
+			<pgc>
+				<vob file="mpg"></vob>
+				<button name="1">jump title 1 chapter 1; </button>>

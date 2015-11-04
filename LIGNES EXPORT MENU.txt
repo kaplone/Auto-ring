@@ -1,0 +1,5 @@
+convert /mnt/nfs_out/3_2/pages/solo_bonus.bmp -resize 720x576\! -type truecolor -depth 8 ppm:- | ppmtoy4m -n50 -F25:1 -A64:45 -I p -r -S 420mpeg2 | mpeg2enc -n p -f8 -b8000 -a3 -o /mnt/nfs_out/3_2/pages/solo_bonus.m2v
+
+mplex -f 8 -o /dev/stdout /mnt/nfs_out/3_2/pages/solo_bonus.m2v /home/autor/Desktop/auto-ring/biblio/menu_audio.ac3 | spumux -v 2 /mnt/nfs_out/3_2/pages/solo_bonus.xml > /mnt/nfs_out/3_2/pages/solo_bonus_s0.mpg
+
+spumux -s 1 /mnt/nfs_out/3_2/pages/solo_bonus_letterbox.xml < /mnt/nfs_out/3_2/pages/solo_bonus_s0.mpg > /mnt/nfs_out/3_2/pages/solo_bonus.mpg

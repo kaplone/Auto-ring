@@ -1,0 +1,4 @@
+gimp --verbose -i -d --batch-interpreter=python-fu-eval -b - < '/mnt/nfs1/XXXX/pages/solo_page_1_5.py'
+
+mkisofs -A 'autoring' -sysid 'gentoo' -p 'VDM' -V 'XXXX' -o /mnt/isos/XXXX.iso -dvd-video /mnt/nfs1/XXXX/export_dvd_mplex
+
